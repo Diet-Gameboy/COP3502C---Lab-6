@@ -12,7 +12,7 @@ def encode(password_str): #This function takes in a string containing an integer
 
 def decode(encoded_str):
     return_str = ""
-    nums = {0:7, 1:8, 2:9, 3:0, 4:1, 5:2, 6:3, 7:4, 8:5, 9:6, }
+    nums = {0: 7, 1: 8, 2: 9, 3: 0, 4: 1, 5: 2, 6: 3, 7: 4, 8: 5, 9: 6, }   # Decodes the encoded string using dictionary
     for i in encoded_str:
         return_str += str(nums[int(i)])
     return return_str
