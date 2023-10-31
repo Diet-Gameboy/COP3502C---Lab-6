@@ -11,7 +11,12 @@ def encode(password_str): #This function takes in a string containing an integer
     return return_str
 
 def decode(encoded_str):
-    return
+    return_str = ""
+    nums = {0:7, 1:8, 2:9, 3:0, 4:1, 5:2, 6:3, 7:4, 8:5, 9:6, }
+    for i in encoded_str:
+        return_str += str(nums[int(i)])
+    return return_str
+
 
 def main():
     loop_ctrl_bool = True
